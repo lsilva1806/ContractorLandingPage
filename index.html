@@ -241,7 +241,7 @@
       <div class="wrap">
         <div class="section-head">
           <h2>Gallery</h2>
-          <p>Placeholders for now — swap each block with real before/after photos anytime.</p>
+          <p>Explore some examples of custom closets, cabinetry, and storage solutions designed for style, functionality, and organization.</p>
         </div>
 
 	<div class="gallery-wrap" data-autoplay="true" data-interval="4500">
@@ -255,28 +255,42 @@
 
 		  <div class="gallery-viewport">
 		    <div class="gallery-track">
-		      <div class="gallery-page">
-		        <div class="gallery">
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('./assets/img/IMG_5519.jpg')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1560185008-b033106af5c3?auto=format&fit=crop&w=1200&q=80')"></div>
-		        </div>
-		      </div>
-		
-		      <!-- Si quieres MÁS grupos, duplica esta "gallery-page" y cambia las imágenes -->
-		      <div class="gallery-page">
-		        <div class="gallery">
-		          <div class="g" style="background-image:url('./assets/img/IMG_5519.jpg')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80')"></div>
-		          <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80')"></div>
-		        </div>
-		      </div>
+		     <div class="gallery-page">
+				  <div class="gallery">
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600585152915-d208bec867a1?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				  </div>
+				</div>
+				
+				
+				<div class="gallery-page">
+				  <div class="gallery">
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1598300056393-4aac492f4344?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				    <div class="g" style="background-image:url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=80')"></div>
+				
+				  </div>
+				</div>
 		    </div>
 		  </div>
 		</div>
@@ -515,21 +529,61 @@
 	  const viewport = wrap?.querySelector('.reviews-viewport');
 	  if(!track || !wrap || !dotsHost || !viewport) return;
 	
-	  const mock = {
-	    rating: 4.9,
-	    total: 87,
-	    googleUrl: "https://www.google.com/maps",
-	    reviews: [
-	      { name:"Carlos M.", stars:5, time:"2 weeks ago", text:"Very professional work. Drywall repair and painting came out clean and on schedule. Communication was excellent." },
-	      { name:"Ana R.", stars:5, time:"1 month ago", text:"Great remodeling help for our condo. They were punctual, respectful, and the finishing details looked premium." },
-	      { name:"James P.", stars:5, time:"3 weeks ago", text:"Fast estimate, fair price, and the team kept everything tidy. Would hire again for future projects." },
-	      { name:"María G.", stars:5, time:"2 months ago", text:"They fixed water-damaged drywall and repainted the whole room. Looks brand new. Highly recommended." },
-	      { name:"Luis F.", stars:5, time:"5 days ago", text:"Reliable and honest. They explained options clearly and delivered exactly what was promised." },
-	      { name:"Sofia T.", stars:5, time:"6 weeks ago", text:"Excellent interior painting. Crisp lines, clean edges, and no mess left behind." },
-	      { name:"Robert K.", stars:5, time:"3 months ago", text:"Solid craftsmanship. Remodeled our bathroom and handled everything smoothly." },
-	      { name:"Daniela V.", stars:5, time:"4 weeks ago", text:"Professional from start to finish. Quality work and great follow-up after completion." }
-	    ]
-	  };
+	const mock = {
+	  rating: 4.9,
+	  total: 52,
+	  googleUrl: "https://www.google.com/maps",
+	  reviews: [
+	    {
+	      name: "Carla M.",
+	      stars: 5,
+	      time: "2 weeks ago",
+	      text: "Amazing experience from start to finish. Our custom closet was beautifully designed, expertly installed, and perfectly adapted to our space."
+	    },
+	    {
+	      name: "Daniel R.",
+	      stars: 5,
+	      time: "1 month ago",
+	      text: "The quality of the craftsmanship was excellent. Everything felt custom, clean, and thoughtfully designed."
+	    },
+	    {
+	      name: "Melissa P.",
+	      stars: 5,
+	      time: "3 weeks ago",
+	      text: "They made our storage area look elegant and functional. We loved the final design and the professional installation."
+	    },
+	    {
+	      name: "Andrea G.",
+	      stars: 5,
+	      time: "2 months ago",
+	      text: "Great communication, great design sense, and a beautiful final result. Our shelving and cabinetry came out exactly as we imagined."
+	    },
+	    {
+	      name: "Luis F.",
+	      stars: 5,
+	      time: "5 days ago",
+	      text: "Very professional and detail-oriented. The project was completed cleanly and the final finish looked premium."
+	    },
+	    {
+	      name: "Sofia T.",
+	      stars: 5,
+	      time: "6 weeks ago",
+	      text: "Our new closet system completely changed the space. It feels more organized, modern, and customized to our needs."
+	    },
+	    {
+	      name: "Robert K.",
+	      stars: 5,
+	      time: "3 months ago",
+	      text: "Excellent cabinetry work. The installation was smooth and the final product looked polished and high quality."
+	    },
+	    {
+	      name: "Daniela V.",
+	      stars: 5,
+	      time: "4 weeks ago",
+	      text: "Creative solutions, clean work, and beautiful finishes. We are very happy with the result and would absolutely recommend them."
+	    }
+	  ]
+	};
 	
 	  // header values
 	  document.getElementById('grRating').textContent = mock.rating.toFixed(1);
