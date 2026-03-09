@@ -6,18 +6,17 @@
   <title>ALVA'S Closets | Custom Closets, Cabinetry & Storage Solutions</title>
   <meta name="description" content="ALVA'S Closets is a Florida-based company specializing in the design, fabrication, and installation of custom closets, kitchen cabinetry, and shelving solutions." />
   <meta name="theme-color" content="#1f2226" />
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png" />
-  <link rel="stylesheet" href="/ContractorLandingPage/assets/style.css?v=3">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="stylesheet" href="assets/style.css?v=6" />
 </head>
 
 <body>
-  <!-- Mobile Drawer -->
   <div class="drawer" id="drawer" aria-hidden="true">
     <div class="drawer-card" role="dialog" aria-modal="true" aria-label="Menu">
       <div class="drawer-top">
         <div class="brand">
           <div class="brandmark">
-            <img src="./assets/img/alvas-logo.png" alt="ALVA'S Closets logo" onerror="this.style.display='none'; this.parentElement.textContent='A';">
+            <img src="assets/img/alvas-logo.png" alt="ALVA'S Closets logo" onerror="this.style.display='none'; this.parentElement.textContent='A';">
           </div>
           <div>
             <b>ALVA'S Closets</b>
@@ -45,7 +44,7 @@
       <div class="nav">
         <a class="brand" href="#top">
           <div class="brandmark">
-            <img src="./assets/img/alvas-logo.png" alt="ALVA'S Closets logo" />
+            <img src="assets/img/alvas-logo.png" alt="ALVA'S Closets logo">
           </div>
           <div>
             <b>ALVA'S Closets</b>
@@ -71,7 +70,6 @@
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
       <div class="wrap">
         <div class="hero-grid">
@@ -126,7 +124,6 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about">
       <div class="wrap">
         <div class="section-head">
@@ -178,7 +175,6 @@
       </div>
     </section>
 
-    <!-- SERVICES -->
     <section id="services">
       <div class="wrap">
         <div class="section-head">
@@ -228,7 +224,6 @@
       </div>
     </section>
 
-    <!-- GALLERY -->
     <section id="gallery">
       <div class="wrap">
         <div class="section-head">
@@ -274,7 +269,6 @@
       </div>
     </section>
 
-    <!-- REVIEWS -->
     <section id="reviews">
       <div class="wrap">
         <div class="section-head">
@@ -312,7 +306,6 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
       <div class="wrap">
         <div class="section-head">
@@ -412,16 +405,14 @@
         if (!el) return;
         e.preventDefault();
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        const drawer = document.getElementById('drawer');
-        if (drawer.classList.contains('open')) drawer.classList.remove('open');
+        document.getElementById('drawer')?.classList.remove('open');
       });
     });
 
     const drawer = document.getElementById('drawer');
     document.getElementById('openDrawer')?.addEventListener('click', () => drawer.classList.add('open'));
     document.getElementById('closeDrawer')?.addEventListener('click', () => drawer.classList.remove('open'));
-    drawer.addEventListener('click', (e) => { if (e.target === drawer) drawer.classList.remove('open'); });
+    drawer?.addEventListener('click', (e) => { if (e.target === drawer) drawer.classList.remove('open'); });
 
     document.getElementById('contactForm')?.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -516,54 +507,14 @@
         total: 52,
         googleUrl: "https://www.google.com/maps",
         reviews: [
-          {
-            name: "Carla M.",
-            stars: 5,
-            time: "2 weeks ago",
-            text: "Amazing experience from start to finish. Our custom closet was beautifully designed, expertly installed, and perfectly adapted to our space."
-          },
-          {
-            name: "Daniel R.",
-            stars: 5,
-            time: "1 month ago",
-            text: "The quality of the craftsmanship was excellent. Everything felt custom, clean, and thoughtfully designed."
-          },
-          {
-            name: "Melissa P.",
-            stars: 5,
-            time: "3 weeks ago",
-            text: "They made our storage area look elegant and functional. We loved the final design and the professional installation."
-          },
-          {
-            name: "Andrea G.",
-            stars: 5,
-            time: "2 months ago",
-            text: "Great communication, great design sense, and a beautiful final result. Our shelving and cabinetry came out exactly as we imagined."
-          },
-          {
-            name: "Luis F.",
-            stars: 5,
-            time: "5 days ago",
-            text: "Very professional and detail-oriented. The project was completed cleanly and the final finish looked premium."
-          },
-          {
-            name: "Sofia T.",
-            stars: 5,
-            time: "6 weeks ago",
-            text: "Our new closet system completely changed the space. It feels more organized, modern, and customized to our needs."
-          },
-          {
-            name: "Robert K.",
-            stars: 5,
-            time: "3 months ago",
-            text: "Excellent cabinetry work. The installation was smooth and the final product looked polished and high quality."
-          },
-          {
-            name: "Daniela V.",
-            stars: 5,
-            time: "4 weeks ago",
-            text: "Creative solutions, clean work, and beautiful finishes. We are very happy with the result and would absolutely recommend them."
-          }
+          { name: "Carla M.", stars: 5, time: "2 weeks ago", text: "Amazing experience from start to finish. Our custom closet was beautifully designed, expertly installed, and perfectly adapted to our space." },
+          { name: "Daniel R.", stars: 5, time: "1 month ago", text: "The quality of the craftsmanship was excellent. Everything felt custom, clean, and thoughtfully designed." },
+          { name: "Melissa P.", stars: 5, time: "3 weeks ago", text: "They made our storage area look elegant and functional. We loved the final design and the professional installation." },
+          { name: "Andrea G.", stars: 5, time: "2 months ago", text: "Great communication, great design sense, and a beautiful final result. Our shelving and cabinetry came out exactly as we imagined." },
+          { name: "Luis F.", stars: 5, time: "5 days ago", text: "Very professional and detail-oriented. The project was completed cleanly and the final finish looked premium." },
+          { name: "Sofia T.", stars: 5, time: "6 weeks ago", text: "Our new closet system completely changed the space. It feels more organized, modern, and customized to our needs." },
+          { name: "Robert K.", stars: 5, time: "3 months ago", text: "Excellent cabinetry work. The installation was smooth and the final product looked polished and high quality." },
+          { name: "Daniela V.", stars: 5, time: "4 weeks ago", text: "Creative solutions, clean work, and beautiful finishes. We are very happy with the result and would absolutely recommend them." }
         ]
       };
 
@@ -659,7 +610,6 @@
 
       wrap.querySelectorAll('[data-rdir]').forEach(btn => {
         const dir = parseInt(btn.dataset.rdir, 10) || 0;
-
         btn.addEventListener('click', () => go(dir));
         btn.addEventListener('touchend', (e) => {
           e.preventDefault();
@@ -681,7 +631,6 @@
       viewport.addEventListener('touchend', (e) => {
         if(!dragging) return;
         dragging = false;
-
         const t = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0] : null;
         if(!t) return;
 
