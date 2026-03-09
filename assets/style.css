@@ -54,8 +54,8 @@ header{
   top:0;
   z-index: 50;
   backdrop-filter: blur(10px);
-  background: rgba(0, 22, 50, .78);
-  border-bottom: 1px solid rgba(176,186,198,.22);
+  background: rgba(31,34,38,.78);
+  border-bottom: 1px solid rgba(255,255,255,.12);
 }
 .nav{
   display:flex;
@@ -153,10 +153,8 @@ header{
   content:"";
   position:absolute; inset:-2px;
   background:
-    radial-gradient(540px 220px at 82% 18%, rgba(176,186,198,.18), transparent 60%),
-    radial-gradient(520px 220px at 14% 14%, rgba(1, 94, 194,.18), transparent 60%);
-  pointer-events:none;
-  opacity:.95;
+    radial-gradient(540px 220px at 82% 18%, rgba(201,122,36,.16), transparent 60%),
+    radial-gradient(520px 220px at 14% 14%, rgba(255,255,255,.06), transparent 60%);
 }
 .card > *{ position:relative; z-index:1; }
 
@@ -166,8 +164,8 @@ header{
   display:inline-flex; gap: 8px; align-items:center;
   padding: 8px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(176,186,198,.26);
-  background: rgba(0, 22, 50, .30);
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(0,0,0,.14);
   color: rgba(255,255,255,.82);
   font-size: 12px;
 }
@@ -227,8 +225,8 @@ h1{
   position:absolute; inset:0;
   background:
     linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,0)),
-    radial-gradient(560px 240px at 85% 20%, rgba(176,186,198,.22), transparent 60%),
-    radial-gradient(520px 240px at 15% 10%, rgba(1, 94, 194,.20), transparent 60%);
+    radial-gradient(560px 240px at 85% 20%, rgba(201,122,36,.16), transparent 60%),
+    radial-gradient(520px 240px at 15% 10%, rgba(255,255,255,.06), transparent 60%);
 }
 
 .quote{
@@ -314,8 +312,8 @@ section{ padding: 42px 0; }
   color: rgba(255,255,255,.82);
   padding: 6px 9px;
   border-radius: 999px;
-  border: 1px solid rgba(176,186,198,.22);
-  background: rgba(0, 22, 50, .30);
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(0,0,0,.14);
 }
 
 /* =========================
@@ -473,7 +471,7 @@ footer{
   gap: 10px;
 }
 .float-btn.float-call{
-  background: linear-gradient(135deg, var(--orange), #9a3412);
+  background: linear-gradient(135deg, var(--wood), var(--wood2));
 }
 .float-btn.float-estimate{
   background: rgba(255,255,255,.10);
@@ -601,7 +599,7 @@ footer{
 
 /* respeta el estilo primary dentro del drawer */
 .drawer-card a.btn.primary{
-  background: linear-gradient(135deg, var(--orange), #9a3412);
+  background: linear-gradient(135deg, var(--wood), var(--wood2));
   border-color: rgba(255,255,255,.18);
 }
 
@@ -648,7 +646,7 @@ footer{
   cursor:pointer;
 }
 .gdot.is-active{
-  background: linear-gradient(135deg, var(--orange), #9a3412);
+  background: linear-gradient(135deg, var(--wood), var(--wood2));
   border-color: rgba(255,255,255,.18);
 }
 
@@ -700,7 +698,7 @@ footer{
   cursor:pointer;
 }
 .rdot.is-active{
-  background: linear-gradient(135deg, var(--orange), #9a3412);
+  background: linear-gradient(135deg, var(--wood), var(--wood2));
   border-color: rgba(255,255,255,.18);
 }
 
