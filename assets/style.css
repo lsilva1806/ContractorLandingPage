@@ -1,17 +1,14 @@
 :root{
-  /* Brand palette (from logo) */
-  --navy:#001632;
-  --navy2:#002c5e;
-  --blue:#014ca1;
-  --blue2:#015ec2;
-  --silver:#b0bac6;
-  --white:#f7f7f7;
+  /* ALVA'S Closets palette */
+  --charcoal:#1f2226;
+  --charcoal2:#2b2f34;
+  --graphite:#3a3f45;
+  --wood:#b86e1f;
+  --wood2:#c97a24;
+  --sand:#e9e6e1;
+  --white:#f8f7f5;
 
-  /* Accent */
-  --orange:#c2410c;
-
-  /* UI */
-  --shadow: 0 18px 45px rgba(0,0,0,.38);
+  --shadow: 0 18px 45px rgba(0,0,0,.28);
   --radius: 18px;
   --radius2: 22px;
   --max: 1120px;
@@ -36,9 +33,9 @@ body::before{
   inset: 0;
   z-index: -1;
   background:
-    radial-gradient(1200px 700px at 75% 10%, rgba(1, 94, 194, .35), transparent 60%),
-    radial-gradient(900px 600px at 15% 0%, rgba(0, 44, 94, .45), transparent 58%),
-    linear-gradient(135deg, #001632 0%, #002c5e 45%, #014ca1 100%);
+    radial-gradient(1000px 600px at 85% 12%, rgba(201,122,36,.18), transparent 60%),
+    radial-gradient(900px 520px at 10% 0%, rgba(255,255,255,.08), transparent 58%),
+    linear-gradient(135deg, #1f2226 0%, #2b2f34 45%, #3a3f45 100%);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -123,11 +120,13 @@ header{
   border-color: rgba(176,186,198,.38);
 }
 .btn.primary{
-  background: linear-gradient(135deg, var(--orange), #9a3412);
+  background: linear-gradient(135deg, var(--wood), var(--wood2));
   border-color: rgba(255,255,255,.18);
-  box-shadow: 0 14px 30px rgba(194,65,12,.25);
+  box-shadow: 0 14px 30px rgba(184,110,31,.22);
 }
-.btn.primary:hover{ background: linear-gradient(135deg, #d45116, #9a3412); }
+.btn.primary:hover{
+  background: linear-gradient(135deg, #c77722, #a55f19);
+}
 
 .hamburger{ display:none; }
 
